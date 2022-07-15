@@ -1,0 +1,51 @@
+    /* 
+    css syntax
+
+    selector{
+        property: value;
+    }
+
+    for classes use (.)
+    for id use (#)
+    */
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+   #nav{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        /* padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 50px; */
+
+        padding: 20px 100px;
+    }
+
+.navlinks a{
+    margin: 0 20px;
+    color: #242D52;
+    font-weight: bold;
+}
+
+.getstartedbtn{
+    background-color: #F3603C;
+    padding: 12px 28px;
+    border-radius: 50px;
+
+}
+
+.getstartedbtn a{
+    color: #fff;
+    font-weight: 600;
+}
