@@ -16,6 +16,10 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    html, body{
+        overflow-x: hidden;
+    }
+
     a{
         text-decoration: none;
     }
@@ -177,9 +181,17 @@
     border-radius: 20px
 }
 
+.testimonialsimageandtext{
+    /* position: relative; */
+}
+
 .testimonialsimageandtext img{
-    margin-top: -70px;
-    width: 30%;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    width: 20% !important;
+    z-index: 3;
 }
 
 .testimonialscontainer .getstartedbtn{
@@ -310,6 +322,26 @@
     filter: blur(5px);
 }
 
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    left: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
 
 /* MEDIA QUERIES */
 @media screen and (max-width:1440px){
@@ -538,6 +570,9 @@
         padding: 0px;
         font-size: 70%;
     }
+    .bottomDiv{
+        gap: 100px;
+    }
 
     #lastsection .alllastsection{
         flex-direction: column-reverse;
@@ -547,5 +582,57 @@
 
     input{
         display: block;
+    }
+}
+@media screen and (max-width:340px){
+    #nav{
+        padding: 20px 16px;
+    }
+
+    #columns{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #columns .img{
+        width: 90%;
+    }
+
+    .leftcolumns{
+        width: 90%;
+    }
+
+    #columns .leftcolumns h1{
+        font-size: 20px;
+    }
+    .leftsecondcolumnsection h1{
+        font-size: 20px;
+    }
+    #secondcolumnsection{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .firstrightsecondcolumnsection{
+        font-size: 9px;
+    }
+    .rightsecondcolumnsection{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    #aftertestimonials .allaftertestimonials h2{
+        font-size: 1.5rem;
+    }
+    .testimonialscontainer .getstartedbtn{
+        width: 38%;
+    }
+    #lastsection{
+        padding: 20px 30px;
+    }
+    .lastlastsection{
+        /* margin-left: auto;
+        margin-right: auto; */
+        width: 100%;
     }
 }
